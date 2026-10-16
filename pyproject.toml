@@ -1,0 +1,20 @@
+[project]
+name = "pixeltable-solar-inspection-labels"
+version = "0.1.0"
+description = "Labeling round-trip for solar panel inspection images: auto-detect hot spots, export the review queue to SQL, correct labels, re-import, diff and export COCO - built with Pixeltable"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Pierre Brunelle" }]
+keywords = ["pixeltable", "multimodal", "ai", "computed-columns", "data-infrastructure", "solar-inspection-labels"]
+dependencies = [
+    "pixeltable>=0.7.17",
+    "pillow",
+    "numpy",
+    "sqlalchemy",
+]
+
+[project.urls]
+Homepage = "https://pixeltable.com"
+Documentation = "https://docs.pixeltable.com"
+Pixeltable = "https://github.com/pixeltable/pixeltable"

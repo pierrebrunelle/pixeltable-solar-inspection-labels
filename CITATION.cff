@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use or adapt this example app, please cite it using these metadata."
+type: software
+title: "Solar Panel Inspection labeling round-trip built with Pixeltable"
+abstract: "Labeling round-trip for solar panel inspection images: auto-detect hot spots, export the review queue to SQL, correct labels, re-import, diff and export COCO."
+authors:
+  - given-names: "Pierre"
+    family-names: "Brunelle"
+repository-code: "https://github.com/pierrebrunelle/pixeltable-solar-inspection-labels"
+url: "https://pierrebrunelle.github.io/awesome-pixeltable-apps/"
+license: Apache-2.0
+version: "0.1.0"
+date-released: 2026-10-16
+keywords:
+  - "pixeltable"
+  - "pixeltable-example"
+  - "python"
+  - "data-labeling"
+  - "solar-energy"
+  - "computer-vision"
+  - "human-in-the-loop"
+  - "data-versioning"
+  - "multimodal"
+  - "ai"
