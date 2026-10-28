@@ -48,10 +48,10 @@ Solar Inspection Labels keeps a human-in-the-loop labeling loop inside Pixeltabl
 
 ## Run the round-trip on Pixeltable Cloud
 
-After `pxt db update` and `pxt schema update app.py pxt://<your-org>:<your-db>/solar` (see below), point `run.py` at the hosted tables:
+After `pxt db update` and `pxt schema update app.py pxt://<your-org>:<your-db>` (see below), point `run.py` at the hosted tables:
 
 ```bash
-SOLAR_CATALOG=pxt://<your-org>:<your-db>/solar python run.py
+SOLAR_CATALOG=pxt://<your-org>:<your-db> python run.py
 ```
 
 The images are uploaded on insert, the computed columns run in the hosted database, and `export_sql` / `import_sql` stream rows between your SQLite file and the cloud tables.
@@ -119,7 +119,7 @@ The same `app.py` runs on [Pixeltable Cloud](https://pixeltable.com). Sign in (o
 pxt login                       # or: export PIXELTABLE_API_KEY=<your-api-key>
 # edit pixeltable.toml: name = 'pxt://<your-org>:<your-db>'
 pxt db update pxt://<your-org>:<your-db>                 # build the image and upload the project
-pxt schema update app.py pxt://<your-org>:<your-db>/solar   # create the tables in the hosted database
+pxt schema update app.py pxt://<your-org>:<your-db>       # create the tables at the database root (no per-app folder)
 ```
 
 Keep keys in environment variables or `pxt secret set`, never in code.
